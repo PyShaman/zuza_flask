@@ -13,14 +13,14 @@
       <th>Typ</th>
       <th>Ocena</th>
       <th>Komentarze</th>
-      {% for _ in table_details %}
+      {% for detail in table_details %}
       <tr>
-        <td> {{_[0]}} </td>
-        <td> {{_[1]}} zł </td>
-        <td> {{_[2]}} </td>
-        <td> {{_[3]}} </td>
-        <td> {{_[4]}} </td>
-        <td> {{_[5]}} </td>
+        <td> {{detail[0]}} </td>
+        <td> {{detail[1]}} zł </td>
+        <td> {{detail[2]}} </td>
+        <td> {{detail[3]}} </td>
+        <td> {{detail[4]}} </td>
+        <td> {{detail[5]}} </td>
       </tr>
       {% endfor %}
     </table>
