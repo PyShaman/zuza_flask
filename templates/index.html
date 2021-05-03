@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pączki</title>
+</head>
+<body>
+    <h1>Oceny Pączków</h1>
+    <table border="1">
+      <th>Miejsce</th>
+      <th>Cena</th>
+      <th>Data</th>
+      <th>Typ</th>
+      <th>Ocena</th>
+      <th>Komentarze</th>
+      {% for _ in table_details %}
+      <tr>
+        <td> {{_[0]}} </td>
+        <td> {{_[1]}} zł </td>
+        <td> {{_[2]}} </td>
+        <td> {{_[3]}} </td>
+        <td> {{_[4]}} </td>
+        <td> {{_[5]}} </td>
+      </tr>
+      {% endfor %}
+    </table>
+</body>
+</html>
